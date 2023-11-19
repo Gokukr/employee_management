@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Employee</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+  <h1>Add New Employee</h1>
+  <form action="/add" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required><br>
+    <label for="dob">DOB:</label>
+    <input type="text" id="dob" name="dob" placeholder="YYYY-MM-DD" required><br>
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" name="salary" required><br>
+    <label for="dept">Department:</label>
+    <input type="text" id="dept" name="dept" required><br>
+    <input type="submit" value="Add Employee">
+  </form>
+  <p><a href="/">Back to Employee List</a></p>
+</body>
+</html>

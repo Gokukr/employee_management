@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Search Results</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <h1>Search Results</h1>
+
+  <% if (employees.length > 0) { %>
+    <ul>
+      <% employees.forEach(employee => { %>
+        <li>
+          <strong>Name:</strong> <%= employee.name %>, 
+          <strong>Age:</strong> <%= employee.age %>, 
+          <strong>DOB:</strong> <%= employee.dob %>, 
+          <strong>Salary:</strong> <%= employee.salary %>, 
+          <strong>Dept:</strong> <%= employee.dept %>
+        </li>
+      <% }); %>
+    </ul>
+  <% } else { %>
+    <p>No results found for "<%= searchKeyword %>".</p>
+  <% } %>
+
+  <a href="/">Go back to home</a>
+</body>
+</html>
